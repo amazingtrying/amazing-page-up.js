@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.section-item-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.section-item-inner-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.section-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.25s ease-in-out, visibility 0.25s ease-in-out;
+    /* min-height: 926px; */
+}
+
+.element {
+    font-size: 20vw;
+    text-align: center;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.section-item.active {
+    visibility: visible;
+    position: fixed;
+    opacity: 1;
+}
+
+.section-item.prev {
+    /* visibility: hidden; */
+    /* opacity: 0;   */
+    /* position: absolute; */
+}
+
+.section-item.next {
+    visibility: visible;
+    opacity: 1;
+    position: fixed;
+}
