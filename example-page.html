@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+<link href="style/amazing-page-up.css" rel="stylesheet" type="text/css"></link>
+<script type="text/javascript">
+    $(function(){
+        if($(window).scrollTop() > 0){
+            $('html,body').animate({scrollTop: 0},100);
+            $('.section-item').removeClass('active');
+            $('.section-item').removeClass('prev');
+            $('.section-item').removeClass('next');
+
+            $('.section-item').eq(0).addClass('active');
+            $('.section-item').eq(1).addClass('next');
+
+
+        }
+    });
+</script>
+<body>
+   
+    <div class="section-item-wrapper">
+        <div class="section-item active" style="background: #FF0000;height: 926px;">
+            <div class="element">1</div>
+        </div>
+        <div class="section-item next" style="background: #FFFF00;height: 926px;">
+            <div class="element">2</div>
+        </div>
+        <div class="section-item" style="background: #FF00FF;height: 926px;">
+            <div class="element">3</div>
+        </div>
+        <div class="section-item" style="background: #CDCDCD;height: 1500px;">
+            <div class="element">4</div>
+        </div>
+        <div class="section-item" style="background: #333333;height: 1500px;">
+            <div class="element">5</div>
+        </div>
+        <div class="section-item" style="background: #336699;height: 926px;">
+            <div class="element">6</div>
+        </div>
+        <div class="section-item" style="background: #445566;height: 926px;">
+            <div class="element">7</div>
+        </div>
+        <div class="section-item" style="background: #987644;height: 1500px;">
+            <div class="element">8</div>
+        </div>
+        <div class="section-item" style="background: #0000FF;height: 926px;">
+            <div class="element">9</div>
+        </div>
+        <div class="section-item" style="background: #A19385;height: 926px;">
+            <div class="element">10</div>
+        </div>
+    </div>
+    <script src="script/amazing-page-up.js"></script>
+</body>
+</html>

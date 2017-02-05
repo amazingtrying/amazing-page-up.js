@@ -1,2 +1,2 @@
-# amazing-page-up.js
+# amazing-page.js
 Page up when mouse wheel scrolling
